@@ -18,5 +18,4 @@ fun main(args: Array<String>) {
         1 -> solveDay01()
         else -> error("day ${day} not implemented")
     }
-    println(args[0])
 }
