@@ -7,6 +7,7 @@ import kotlin.system.exitProcess
 import org.aoc.day01.solve as solveDay01
 import org.aoc.day02.solve as solveDay02
 import org.aoc.day03.solve as solveDay03
+import org.aoc.day04.solve as solveDay04
 
 fun main(args: Array<String>) {
     if (args.isEmpty()) {
@@ -20,6 +21,7 @@ fun main(args: Array<String>) {
         1 -> solveDay01()
         2 -> solveDay02()
         3 -> solveDay03()
+        4 -> solveDay04()
         else -> error("day ${day} not implemented")
     }
 }
