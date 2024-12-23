@@ -9,6 +9,7 @@ import org.aoc.day02.solve as solveDay02
 import org.aoc.day03.solve as solveDay03
 import org.aoc.day04.solve as solveDay04
 import org.aoc.day05.solve as solveDay05
+import org.aoc.day06.solve as solveDay06
 
 fun main(args: Array<String>) {
     if (args.isEmpty()) {
@@ -24,6 +25,7 @@ fun main(args: Array<String>) {
         3 -> solveDay03()
         4 -> solveDay04()
         5 -> solveDay05()
+        6 -> solveDay06()
         else -> error("day ${day} not implemented")
     }
 }
