@@ -42,5 +42,5 @@ sed -i '' -e "s/${PREVIOUS_DAY_FOLDER_NAME}/${TARGET_DAY_FOLDER_NAME}/g" "${SOLU
 MAIN_PATH="${SRC_PATH}/App.kt"
 TARGET_DAY_PADDED=$(printf "%02d" "${DAY}")
 PREVIOUS_DAY_PADDED=$(printf "%02d" "${PREVIOUS_DAY}")
-echo "Running command:" "/${PREVIOUS_DAY_PADDED}/ {p; s/${PREVIOUS_DAY_PADDED}/${TARGET_DAY_PADDED}/g;}" 
+echo "Updating main file with new day"
 sed -i '' -e "/${PREVIOUS_DAY_PADDED}/ {p; s/${PREVIOUS_DAY_PADDED}/${TARGET_DAY_PADDED}/g;}" "${MAIN_PATH}"
