@@ -12,10 +12,10 @@ enum class Direction4 {
 
     fun vector(): Vector2 =
             when (this) {
-                NORTH -> Vector2(-1, 0)
-                EAST -> Vector2(0, 1)
-                SOUTH -> Vector2(1, 0)
-                WEST -> Vector2(0, -1)
+                NORTH -> Vector2(0, -1)
+                EAST -> Vector2(1, 0)
+                SOUTH -> Vector2(0, 1)
+                WEST -> Vector2(-1, 0)
             }
 }
 
