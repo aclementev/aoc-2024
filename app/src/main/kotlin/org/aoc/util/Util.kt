@@ -17,6 +17,17 @@ enum class Direction4 {
                 SOUTH -> Vector2(0, 1)
                 WEST -> Vector2(-1, 0)
             }
+
+    companion object Factory {
+        fun fromVector(vector: Vector2): Direction4 =
+                when (vector) {
+                    Vector2(0, -1) -> Direction4.NORTH
+                    Vector2(1, 0) -> Direction4.EAST
+                    Vector2(0, 1) -> Direction4.SOUTH
+                    Vector2(-1, 0) -> Direction4.WEST
+                    else -> error("Cannot create a Direction4 from vector: $vector")
+                }
+    }
 }
 
 enum class Direction8 {
@@ -77,5 +88,5 @@ fun readDataFile(path: String): String {
 }
 
 fun readDataLines(path: String): List<String> {
-    return readDataFile(path).split("\n")
+    return readDataFile(path).split("\n").map { it.trim() }
 }
